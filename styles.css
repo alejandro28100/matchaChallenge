@@ -96,6 +96,7 @@ header .actions a#signIn {
 	color: #1d85d0;
 	font-weight: 600;
 	cursor: pointer;
+	text-align: center;
 }
 header .actions a#getStarted {
 	margin-right: 10px;
@@ -105,7 +106,46 @@ header .actions a#getStarted {
 	padding: 10px;
 	border-radius: 10px;
 	cursor: pointer;
+	text-align: center;
 }
 header .actions a#getStarted:hover {
 	background: #0f466d;
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+	header {
+		flex-direction: column;
+		height: auto;
+	}
+	header a.logo {
+		margin: 20px 0px;
+		width: 100%;
+	}
+	header a.logo img {
+		height: 70%;
+	}
+	header nav ul.links {
+		display: none;
+	}
+	header div.actions {
+		width: 100%;
+		flex-direction: column;
+	}
+	header div.actions * {
+		margin: 10px 0px 10px 0px !important;
+	}
+}
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+	header {
+		justify-content: space-around;
+	}
+	header nav {
+		display: none;
+	}
+	header div.actions,
+	header a.logo {
+		width: 50%;
+	}
 }
