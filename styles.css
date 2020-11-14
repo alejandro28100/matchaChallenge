@@ -201,6 +201,7 @@ section#mentions article ul.images li.image img {
 section#features {
 	background: #e6e6e6;
 	min-height: 80vh;
+	padding-bottom: 20px;
 }
 
 section#features > h1 {
@@ -268,6 +269,57 @@ section#cta .action a {
 section#cta .action p span {
 	color: #0f466d;
 	font-weight: 600;
+}
+
+/* Links */
+section#links {
+	display: flex;
+	padding: 0px 50px;
+	font-size: 15px;
+}
+section#links h1 {
+	font-size: 20px;
+	color: #1d85d0;
+	margin: 15px 0px;
+}
+section#links .box-row {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+section#links .box-row p {
+	margin: 15px 0px;
+}
+section#links .box-row .suscription {
+	display: flex;
+}
+section#links .box-row .suscription input {
+	padding: 10px;
+	border: none;
+	border: #1d85d0 1px solid;
+	outline: none;
+}
+
+section#links .box-row .suscription input[type="button"] {
+	background: #1d85d0;
+	color: white;
+	border: none;
+	font-weight: 700;
+}
+
+section#links .links-row {
+	padding: 0px 20px;
+}
+section#links .links-row .link-list {
+	list-style: none;
+}
+section#links .links-row .link-list .link {
+	margin: 10px 0px;
+	cursor: pointer;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section#links .links-row .link-list .link:hover {
+	color: #1d85d0;
 }
 
 /* Footer */
@@ -369,6 +421,21 @@ footer a.logo img {
 	}
 	section#cta .action a {
 		font-size: 15px;
+	}
+	/* Links */
+	section#links {
+		flex-direction: column;
+	}
+	section#links .box-row {
+		text-align: center;
+	}
+	section#links .box-row .suscription input {
+		width: 50%;
+	}
+	section#links .links-row {
+		text-align: center;
+		padding: 0px;
+		margin: 20px 0px;
 	}
 	/* Footer */
 	footer {
