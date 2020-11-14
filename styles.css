@@ -149,9 +149,10 @@ section#hero .info p {
 }
 section#hero .info div.action {
 	font-size: 20px;
-	/* display: block; */
+	display: flex;
 }
 section#hero .info div.action a {
+	text-align: center;
 	margin-right: 20px;
 	background: #1d85d0;
 	color: white;
@@ -175,7 +176,7 @@ section#hero video {
 section#mentions article h1 {
 	text-align: center;
 }
-section#mentions article ul {
+section#mentions article ul.images {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -245,14 +246,17 @@ section#features .cards .card img {
 	header div.actions * {
 		margin: 10px 0px 10px 0px !important;
 	}
-
+	/* Hero */
 	section#hero {
 		padding: 30px;
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr 300px;
 	}
 	section#hero .info h1 {
-		font-size: 40px;
+		font-size: 25px;
+	}
+	section#hero .info p {
+		font-size: 15px;
 	}
 	section#hero video {
 		grid-column: 1;
@@ -263,8 +267,15 @@ section#features .cards .card img {
 	}
 	section#hero .info div.action a {
 		margin-right: 0px;
-		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
+	}
+	/* Mentions */
+	section#mentions article ul.images {
+		flex-direction: column;
+	}
+	section#mentions article ul.images li.image {
+		width: 100%;
+		margin: 50px 0px;
 	}
 }
 /** dispositivos medianos (tablets) */
@@ -287,5 +298,13 @@ section#features .cards .card img {
 	}
 	section#hero video {
 		grid-column: 1;
+	}
+	/* Mentions */
+	section#mentions article ul.images {
+		flex-direction: column;
+	}
+	section#mentions article ul.images li.image {
+		width: 100%;
+		margin: 50px 0px;
 	}
 }
