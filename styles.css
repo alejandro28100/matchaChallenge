@@ -12,7 +12,7 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 }
 section {
-	margin: 40px 0px;
+	margin: 100px 0px;
 }
 
 header {
@@ -197,10 +197,15 @@ section#mentions article ul.images li.image:hover {
 section#mentions article ul.images li.image img {
 	width: 50%;
 }
-
 /* Features */
+section#features {
+	background: #e6e6e6;
+	min-height: 80vh;
+}
+
 section#features > h1 {
 	text-align: center;
+	padding: 30px 0px;
 }
 section#features .cards {
 	margin: 40px 0px;
@@ -224,7 +229,6 @@ section#features .cards .card .description {
 }
 section#features .cards .card img {
 	width: 100%;
-	object-fit: scale-down;
 	border-radius: 15px;
 }
 section#cta {
