@@ -8,6 +8,12 @@ h1 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 30px;
 }
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+section {
+	margin: 40px 0px;
+}
 
 header {
 	display: flex;
@@ -138,8 +144,8 @@ section#hero .info h1 span {
 }
 section#hero .info p {
 	font-size: 20px;
+	line-height: 2;
 	margin: 20px 0px;
-	font-family: Arial, Helvetica, sans-serif;
 }
 section#hero .info div.action {
 	font-size: 20px;
@@ -157,18 +163,15 @@ section#hero .info div.action a {
 }
 
 section#hero video {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-self: center;
 	width: 100%;
 	grid-column: 2;
+	/* margin: 0px auto; */
 	border-radius: 10px;
 }
 
 /* Mentions */
-section#mentions {
-	margin: 30px 0px;
-}
+
 section#mentions article h1 {
 	text-align: center;
 }
@@ -178,7 +181,6 @@ section#mentions article ul {
 	align-items: center;
 }
 section#mentions article ul.images li.image {
-	margin: 20px 0px;
 	list-style: none;
 	text-align: center;
 	width: 25%;
@@ -188,9 +190,38 @@ section#mentions article ul.images li.image:hover {
 	filter: grayscale(0);
 }
 section#mentions article ul.images li.image img {
-	width: 80%;
+	width: 50%;
 }
 
+/* Features */
+section#features > h1 {
+	text-align: center;
+}
+section#features .cards {
+	margin: 40px 0px;
+	display: flex;
+	justify-content: space-evenly;
+}
+section#features .cards .card {
+	width: 30%;
+	text-align: center;
+}
+section#features .cards .card .title {
+	font-weight: 300;
+	font-size: 25px;
+	letter-spacing: -1px;
+	margin: 10px;
+}
+section#features .cards .card .description {
+	margin: 10px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+section#features .cards .card img {
+	width: 100%;
+	object-fit: scale-down;
+	border-radius: 15px;
+}
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
 	header {
