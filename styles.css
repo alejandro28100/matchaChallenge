@@ -28,3 +28,8 @@
 	background: transparent !important;
 	color: var(--Secondary-Color) !important;
 }
+
+.btn.bg-secondary:hover,
+.btn.bg-secondary:focus {
+	background: var(--Secondary-Color) !important;
+}
