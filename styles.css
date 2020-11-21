@@ -11,6 +11,9 @@
 .text-secondary {
 	color: var(--Secondary-Color) !important;
 }
+.hover-text-secondary:hover {
+	color: var(--Secondary-Color) !important;
+}
 .bg-main {
 	background: var(--Main-Color) !important;
 }
