@@ -4,162 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matcha Challenge</title>
+    <title>Matcha Bootstrap Challenge</title>
     <link rel="stylesheet" href="./styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="/">
-            <img src="./logo.svg" alt="">
-            <span class="text">DigiBoard</span>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-5">
+        <a class="navbar-brand" href="#">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="">
         </a>
-        <nav>
-            <ul class="links">
-                <li class="link with-menu">
-                    <a>Productos</a>
-                    <ul class="menu">
-                        <li>Generador de questionarios</li>
-                        <li>Generador de exámenes de nivel de inglés</li>
-                        <li>Libreria de actividades prefabricadas</li>
-                        <li>Libreria de contenido REALIA</li>
-                    </ul>
+        <button class="navbar-toggler border-white" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Blog Creator</a>
+                        <a class="dropdown-item" href="#">Content Library</a>
+                    </div>
                 </li>
-                <li class="link"><a>Historia</a></li>
-                <li class="link"><a>Blog</a></li>
-                <li class="link"><a>Precios</a></li>
-                <li class="link"><a>Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="actions">
-            <a id="signIn"> Inicia Sesión</a>
-            <a id="getStarted">Pruébalo gratis</a>
-        </div>
-    </header>
-
-    <section id="hero">
-        <article class="info">
-            <h1>El mundo está cambiando. <br> La <span>educación</span>,<br>también. </h1>
-            <p>
-                Enfrenta el proceso de diseño de materiales
-                didácticos digitales de manera efectiva. Elige una plantilla, introduce tu información y comparte tus
-                actividades con tus alumnos.
-
-            </p>
-            <div class="action">
-                <a>Comienza una prueba gratis </a>
-                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/gfx/shopify-stars.svg" alt="Shopify">
-            </div>
-        </article>
-        <video controls autoplay loop src="./video.mp4"></video>
-    </section>
-
-    <section id="mentions">
-        <article>
-            <h1>Mencionado en:</h1>
-            <ul class="images">
-                <li class="image">
-                    <img src="https://logodix.com/logo/416759.png" alt="">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Templates</a>
                 </li>
-                <li class="image">
-                    <img src="https://assets.stickpng.com/images/5842f8b6a6515b1e0ad75b2c.png" alt="">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
                 </li>
-                <li class="image">
-                    <img src="https://cdn.shopify.com/s/files/1/0249/3094/3061/files/forbes-logo.png?v=1573660992"
-                        alt="">
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customers</a>
                 </li>
-                <li class="image">
-                    <img src="https://cdn.freebiesupply.com/images/large/2x/cambridge-logo-transparent.png" alt=""></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resorces
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mornig Matcha</a>
+                        <a class="dropdown-item" href="#">Toolkit</a>
+                        <a class="dropdown-item" href="#">Free COVID-19 Content</a>
+                        <a class="dropdown-item" href="#">Content Marketing Course</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Matcha Referral Program</a>
+                        <a class="dropdown-item" href="#">2020 Benchmark Report</a>
+                        <a class="dropdown-item" href="#">Email Marketing Course</a>
+                        <a class="dropdown-item" href="#">Help Center</a>
+                    </div>
+                </li>
             </ul>
-
-        </article>
-    </section>
-
-    <section id="features">
-        <h1>Caracteristicas</h1>
-        <div class="cards">
-            <article class="card">
-                <img src="https://cdn.dribbble.com/users/73196/screenshots/1223871/multiplatform_juggling.jpg" alt="">
-                <h1 class="title">Multiplataforma</h1>
-                <p class="description">
-                    Trabaja desde tu celular, tu laptop u ordernador. Todos los cambios son sincronizados en todos tus
-                    dispositivos.
-                </p>
-            </article>
-            <article class="card">
-                <img src="https://cdn.dribbble.com/users/331265/screenshots/12113273/media/89ba2fd2de2697fe8cfa38b003dad1c3.png"
-                    alt="">
-                <h1 class="title">Intiutivo</h1>
-                <p class="description">
-                    Comienza a crear tus actividades en minutos gracias a nuestra interfaz intuitiva. Aprende a usar la
-                    plataforma en menos de 10 minutos.
-                </p>
-            </article>
-            <article class="card">
-                <img src="https://cdn.dribbble.com/users/3116794/screenshots/11278226/media/87afa6b7959d797728adf7e5f55571b5.jpg"
-                    alt="">
-                <h1 class="title">Evaluativo</h1>
-                <p class="description">
-                    Verifica el desempeño de tus alumnos en cada una de tus actividades.
-                </p>
-            </article>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn text-main my-2 my-sm-0 font-weight-bolder" type="submit">Sign In</button>
+                <button class="btn bg-main text-white my-2 my-sm-0 font-weight-bolder" type="submit">Get Started
+                    free</button>
+            </form>
         </div>
-    </section>
+    </nav>
 
-    <section id="cta">
-        <div class="info">
-            <h1 class="title">Inicia tu prueba gratis. <br> Actualiza a un paquete premium conforme a tus necesidades.
-            </h1>
-            <p class="description">
-                Para más información <a href="#">agenda una cita</a> .
-            </p>
-        </div>
-        <div class="action">
-            <a>Inicia tu prueba</a>
-            <p>Inicia un periodo de prueba de 7 dias. <br> <span> No se requiere tarjeta de crédito.</span></p>
-        </div>
-    </section>
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 
-    <section id="links">
-        <div class="box-row">
-            <h1>Suscribete</h1>
-            <p>Entérate de las últimas novedades y tendencias en recursos digitales cada semana.</p>
-            <div class="suscription">
-                <input type="text" placeholder="Correo Electrónico">
-                <input type="button" value="Suscribirse">
-            </div>
-        </div>
-        <div class="links-row">
-            <h1>Productos</h1>
-            <ul class=" link-list">
-                <li class="link">Generador de questionarios</li>
-                <li class="link">Generador de exámenes de nivel de inglés</li>
-                <li class="link">Libreria de actividades prefabricadas</li>
-                <li class="link">Libreria de contenido REALIA</li>
-            </ul>
-        </div>
-
-        <div class="links-row">
-            <h1>DigiBoard</h1>
-            <ul class="link-list">
-                <li class="link"><a>Historia</a></li>
-                <li class="link"><a>Blog</a></li>
-                <li class="link"><a>Precios</a></li>
-                <li class="link"><a>Contacto</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <a class="logo" href="/">
-            <img src="./logo.svg" alt="">
-            <span class="text">DigiBoard</span>
-        </a>
-        <span>
-            © 2020 DigiBoard. Todos los derechos reservados
-        </span>
-    </footer>
 
 </body>
 
