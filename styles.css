@@ -2,6 +2,9 @@
 	--Main-Color: #025157;
 	--Secondary-Color: #67b54b;
 }
+.text-black {
+	color: black;
+}
 .text-gray {
 	color: rgb(161, 161, 161);
 }
