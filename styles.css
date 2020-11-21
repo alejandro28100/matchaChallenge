@@ -3,7 +3,7 @@
 	--Secondary-Color: #67b54b;
 }
 .text-gray {
-	color: rgb(185, 185, 185);
+	color: rgb(161, 161, 161);
 }
 .text-main {
 	color: var(--Main-Color) !important;
