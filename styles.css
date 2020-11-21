@@ -42,3 +42,7 @@
 .btn.bg-secondary:focus {
 	background: var(--Secondary-Color) !important;
 }
+
+ul li {
+	list-style-type: none;
+}
