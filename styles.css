@@ -17,6 +17,9 @@
 .bg-main {
 	background: var(--Main-Color) !important;
 }
+.hover-bg-secondary:hover {
+	background: var(--Secondary-Color) !important;
+}
 .bg-secondary {
 	background: var(--Secondary-Color) !important;
 }
